@@ -44,7 +44,8 @@ class UserPermession
                         '/admin/dividedinto/list','/admin/aividedinto/list2','/admin/order/detail/','/admin/config/edit'];
 
                     if(in_array($action,$return404)){
-                      return response('对不起您没有查看的权限',401);
+//                      return response('对不起您没有查看的权限',401);
+                        return redirect('admin/error');
                   }else{
                       return response()->json([
                           'status' => '404',

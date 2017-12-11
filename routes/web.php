@@ -141,6 +141,7 @@ Route::get('admin/design/details', 'admin\DesignController@details')->middleware
 Route::get('admin/design/agree', 'admin\DesignController@agree')->middleware('userpermisson');
 Route::get('admin/design/refuse', 'admin\DesignController@refuse')->middleware('userpermisson');
 Route::post('admin/design/handle', 'admin\DesignController@handle')->middleware('userpermisson');
+Route::get('admin/error', 'admin\UserPermession@error')->middleware('adminlogin');
 
 
 // 前端路由
